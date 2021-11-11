@@ -1,3 +1,9 @@
+
+:root {
+    --blue-ps: RGB(8, 118, 208);
+    --grey-paragraph: RGB(99, 99, 99);
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -67,12 +73,14 @@ header {
     margin-top: 7em;
 }
 
+
+
 .jumbo_contained img {
     height: 65px;
     margin-top: 200px;
 }
 
-.jumbo_contained h1 {
+h1 {
     color: white;
     padding: 0.5em 0;
     font-size: 45px;
@@ -91,7 +99,7 @@ header {
 }
 
 .jumbo_contained button {
-    background-color: red;
+    background-color: #dede00;
     border: none;
     border-radius: 20px;
 }
@@ -102,8 +110,11 @@ header {
 
 .jumbo_contained a {
     text-decoration: none;
-    color: white;
-    font-size: 25px;
+    color: black;
+    font-size: 15px;
+    padding: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 /* /jumbo */
@@ -119,4 +130,45 @@ header {
     .card_section img {
         height: 110px;
     }
+}
+
+/* /card section */
+
+/* ps5 section */
+
+.section_ps5 h4 {
+    text-transform: uppercase;
+    color: RGB(8, 118, 208);
+    font-size: 15px;
+}
+
+.section_ps5 h1 {
+    color: black;
+    padding: 0.5em 0;
+    font-size: 45px;
+}
+
+.section_ps5 p {
+    color: RGB(99, 99, 99);
+    font-size: 20px;
+}
+
+
+.section_ps5 button {
+    background-color: RGB(8, 118, 208);
+    border: none;
+    border-radius: 20px;
+}
+
+.section_ps5 a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    padding: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.section_ps5 img {
+    height: 500px;
 }
