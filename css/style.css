@@ -105,3 +105,18 @@ header {
     color: white;
     font-size: 25px;
 }
+
+/* /jumbo */
+
+/* card section */
+
+.card_section img {
+    height: 130px;
+    border-radius: 10px;
+}
+
+@media screen and (min-width:992px) {
+    .card_section img {
+        height: 110px;
+    }
+}
