@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* header rules */
+
+header {
+    border: 1px solid black;
+    width: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+.header_top {
+    background-color: black;
+}
+
+.header_top img {
+    height: 15px;
+}
+
+.header_bottom {
+    padding-top: 1em; 
+}
+
+.header_bottom img {
+    height: 70px;
+}
+
+.header_bottom button {
+    border: none;
+}
+
+.header_bottom button a {
+    color: grey;
+    font-size: 20px;
+}
+
+/* header end */
+
+/* main start */
+
+/* jumbo rules */
+
