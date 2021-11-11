@@ -2,14 +2,30 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.h1, 
+.h2, 
+.h3, 
+.h4, 
+.h5, 
+.h6, 
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+    margin-bottom: 0;
+}
+
 /* header rules */
 
 header {
-    border: 1px solid black;
     width: 100%;
     position: fixed;
     right: 0;
     top: 0;
+    background-color: white;
+    z-index: 999;
 }
 
 .header_top {
@@ -43,3 +59,49 @@ header {
 
 /* jumbo rules */
 
+.jumbo_container {
+    background-image: url(../img/jumbo-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 7em;
+}
+
+.jumbo_contained img {
+    height: 65px;
+    margin-top: 200px;
+}
+
+.jumbo_contained h1 {
+    color: white;
+    padding: 0.5em 0;
+    font-size: 45px;
+}
+
+/* .jumbo_contained {
+    width: 90%;
+    height: 100%;
+    background-color: green;
+    margin: 0 auto;
+} */
+
+.jumbo_contained p {
+    color: white;
+    font-size: 20px;
+}
+
+.jumbo_contained button {
+    background-color: red;
+    border: none;
+    border-radius: 20px;
+}
+
+.jumbo_contained button:hover {
+    cursor: pointer;
+}
+
+.jumbo_contained a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
