@@ -42,21 +42,8 @@ header {
     height: 15px;
 }
 
-.header_bottom {
-    padding-top: 1em; 
-}
-
 .header_bottom img {
     height: 70px;
-}
-
-.header_bottom button {
-    border: none;
-}
-
-.header_bottom button a {
-    color: grey;
-    font-size: 20px;
 }
 
 
@@ -66,6 +53,10 @@ header {
     color: black;
     font-size: 20px;
     margin-top: 2px;
+}
+
+.ball::before {
+    content: 'kek';
 }
 
 /* header end */
