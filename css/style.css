@@ -379,3 +379,47 @@ h1 {
         height: 360px;
     }
 }   
+
+/* ps now rules */
+
+.ps_now_container {
+    background-color: RGB(8, 19, 50);
+}
+
+.ps_now_contained img {
+    height: 80px;
+}
+
+.ps_now_contained p {
+    color: white;
+    font-size: 15px;
+}
+
+.ps_now_contained button {
+    background-color: rgb(212, 212, 212);
+    border: none;
+    border-radius: 20px;
+}
+
+.ps_now_contained a {
+    text-decoration: none;
+    color:RGB(8, 19, 50);
+    font-size: 15px;
+    padding: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.ps_now_contained .now_month {
+    height: 290px;
+}
+
+@media screen and (max-width:768px) {
+    .ps_now_contained .now_month {
+        display: none;
+    }
+}
+
+/* social media rules */
+
+
