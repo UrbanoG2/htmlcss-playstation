@@ -178,7 +178,7 @@ h1 {
 
 @media screen and (min-width: 768px) {
     .section_ps5 img {
-        height: 350px;
+        height: 550px;
     }
     
 }
@@ -355,3 +355,27 @@ h1 {
         display: none;
     }
 }
+
+
+/* ps store rules */
+
+.ps_store_contained h1 {
+    color: black;
+    padding: 0.5em 0;
+    font-size: 45px;
+}
+
+.ps_store_contained p {
+    color: RGB(99, 99, 99);
+    font-size: 20px;
+}
+
+.ps_store_contained img {
+    height: 580px;
+}
+
+@media screen and (min-width: 768px) {
+    .ps_store_contained img {
+        height: 360px;
+    }
+}   
