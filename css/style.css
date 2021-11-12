@@ -55,6 +55,12 @@ header {
     margin-top: 2px;
 }
 
+@media screen and (min-width:992px) {
+    .small_left {
+        align-items: flex-start;
+    }
+}
+
 .ball::before {
     content: 'kek';
 }
@@ -86,12 +92,6 @@ h1 {
     font-size: 45px;
 }
 
-/* .jumbo_contained {
-    width: 90%;
-    height: 100%;
-    background-color: green;
-    margin: 0 auto;
-} */
 
 .jumbo_contained p {
     color: white;
@@ -171,4 +171,136 @@ h1 {
 
 .section_ps5 img {
     height: 500px;
+}
+
+/* accessories section */
+
+.accessories_section img {
+    height: 160px;
+}
+
+.accessories_section .filter {
+    height: 160px;
+    background-color: black(255, 255, 255, 0.322);
+}
+
+@media screen and (min-width:992px) {
+    .accessories_section img {
+        height: 190px;
+        margin-left: 1em;
+    }
+}
+
+
+/* adv section rules */
+
+.adv_container {
+    background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 7em;
+}
+
+
+
+.adv_contained img {
+    height: 165px;
+    margin-top: 50px;
+}
+
+h1 {
+    color: white;
+    padding: 0.5em 0;
+    font-size: 45px;
+}
+
+
+.adv_contained p {
+    color: white;
+    font-size: 20px;
+}
+
+.adv_contained button {
+    background-color: orange;
+    border: none;
+    border-radius: 20px;
+}
+
+.adv_contained button:hover {
+    cursor: pointer;
+}
+
+.adv_contained a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    padding: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* coming soon rules */
+
+.coming_soon_container {
+    background-color:RGB(44, 44, 44) ;
+}
+
+.coming_soon_contained img {
+    height: 265px;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+
+.coming_soon_contained p {
+    color: white;
+    font-size: 20px;
+}
+
+@media screen and (min-width:1200px) {
+
+    .coming_soon_contained img {
+        height: 200px;
+    }
+
+}    
+
+
+/* ps4 section rules */
+
+.ps4_contained h1 {
+    color: black;
+    padding: 0.5em 0;
+    font-size: 45px;
+}
+
+.ps4_contained p {
+    color: RGB(99, 99, 99);
+    font-size: 20px;
+}
+
+
+.ps4_contained button {
+    background-color: RGB(8, 118, 208);
+    border: none;
+    border-radius: 20px;
+}
+
+.ps4_contained a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    padding: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.ps4_contained img {
+    height: 330px;
+}
+
+@media screen and (min-width:768px) {
+    .ps4_contained img {
+       height: 145px;
+    }
 }
