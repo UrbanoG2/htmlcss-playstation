@@ -447,3 +447,51 @@ h1 {
 .social_media_contained img {
     height: 150px;
 }
+
+/* footer rules */
+
+footer {
+    background-color: var(--blue-ps);
+}
+
+.footer_contained img {
+    height: 90px;
+}
+
+.footer_contained #globe {
+    height: 20px;
+}
+
+.footer_contained span a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.footer_contained ul {
+    list-style: none;
+}
+
+
+.footer_contained ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.footer_contained #sie {
+    height: 40px;
+}
+
+
+.footer_contained p {
+    color: white;
+    font-size: 12px;
+}
+
+
+.footer_contained p span a {
+    font-size: 12px;
+    text-decoration: underline;
+}
