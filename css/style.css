@@ -9,6 +9,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
+    overflow-x: hidden;
 }
 
 .h1, 
@@ -41,32 +42,65 @@ header {
     background-color: black;
 }
 
+.header_bottom .input_container {
+    width: 500px;
+    margin: 0 auto;
+    border: 2px solid black;
+}
+
 .header_top img {
     height: 15px;
 }
 
 .header_bottom img {
-    height: 70px;
+    height: 40px;
+    vertical-align: initial;
 }
 
-
-/* navbar bootstrap */
-
-#search {
-    color: black;
-    font-size: 20px;
-    margin-top: 2px;
-}
-
-@media screen and (min-width:992px) {
-    .small_left {
-        align-items: flex-start;
+@media screen and (max-width:992px) {
+    .header_bottom img {
+        vertical-align: middle;
     }
 }
 
-.ball::before {
-    content: '  ';
+.header_bottom img:hover {
+    cursor: pointer;
 }
+
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+    box-shadow: inset 0 0 0 1px black, inset 0 0 0 2px white;
+}
+
+/* navbar bootstrap */
+
+.header_bottom .input_container input {
+    width: 90%;
+    border: none;
+}
+
+
+
+
+@media screen and (min-width:992px) {
+    .header_bottom .input_container {
+        border: none;
+    }
+
+    .header_bottom .input_container input {
+        display:none;
+    }
+}
+
+/* @media screen and (min-width:992px) {
+    .small_left {
+        align-items: flex-start;
+    }
+} */
+
+
 
 /* header end */
 
@@ -107,8 +141,12 @@ h1 {
     border-radius: 20px;
 }
 
-.jumbo_contained button:hover {
+.jumbo_contained button:hover,
+.jumbo_contained button:focus,
+.jumbo_contained button:active {
     cursor: pointer;
+    box-shadow: inset 0 0 0 1px #dede00, inset 0 0 0 2px black;
+    
 }
 
 .jumbo_contained a {
@@ -127,13 +165,53 @@ h1 {
 .card_section img {
     height: 130px;
     border-radius: 10px;
+    -webkit-animation-duration: 0s;
+    animation-duration: 0s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
 }
+
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {
+		-webkit-transform: translateY(0);
+		-ms-transform:     translateY(0);
+		transform:         translateY(0)
+	}
+	50% {
+		-webkit-transform: translateY(-15px);
+		-ms-transform:     translateY(-15px);
+		transform:         translateY(-15px)
+	}
+	
+    100% {
+		-webkit-transform: translateY(-30px);
+		-ms-transform:     translateY(-30px);
+		transform:         translateY(-30px)
+	}
+}
+
+
+
+.card_section img:hover {
+    cursor: pointer;
+    animation-name: bounce;   
+}
+.card_section img:hover,
+.card_section img:active,
+.card_section img:focus {
+    border: 3px solid RGB(8, 118, 208);
+}
+
+
 
 @media screen and (min-width:992px) {
     .card_section img {
         height: 110px;
     }
 }
+
 
 /* /card section */
 
@@ -161,6 +239,13 @@ h1 {
     background-color: RGB(8, 118, 208);
     border: none;
     border-radius: 20px;
+}
+
+.section_ps5 button:hover,
+.section_ps5 button:focus,
+.section_ps5 button:active {
+    box-shadow: inset 0 0 0 1px RGB(8, 118, 208), inset 0 0 0 2px white;
+    cursor: pointer;
 }
 
 .section_ps5 a {
@@ -194,12 +279,18 @@ h1 {
 
 .accessories_section img {
     height: 140px;
+    filter: opacity(80%);
 }
 
-.accessories_section .filter {
-    height: 140px;
-    background-color: black(255, 255, 255, 0.322);
+
+.accessories_section img:hover,
+.accessories_section img:focus,
+.accessories_section img:active {
+    filter: none;
+    border-bottom: 3px solid RGB(8, 118, 208);
 }
+
+
 
 @media screen and (min-width:992px) {
     .accessories_section img {
@@ -244,8 +335,11 @@ h1 {
     border-radius: 20px;
 }
 
-.adv_contained button:hover {
+.adv_contained button:hover,
+.adv_contained button:focus,
+.adv_contained button:active {
     cursor: pointer;
+    box-shadow: inset 0 0 0 1px orange, inset 0 0 0 2px black;
 }
 
 .adv_contained a {
@@ -267,6 +361,11 @@ h1 {
     height: 240px;
     border-radius: 10px;
     margin-bottom: 1em;
+}
+
+.coming_soon_contained img:hover {
+    cursor: pointer;
+    filter: contrast(80%);
 }
 
 .coming_soon_contained p {
@@ -301,6 +400,14 @@ h1 {
     background-color: RGB(8, 118, 208);
     border: none;
     border-radius: 20px;
+}
+
+
+.ps4_contained button:hover,
+.ps4_contained button:focus,
+.ps4_contained button:active {
+    box-shadow: inset 0 0 0 1px RGB(8, 118, 208), inset 0 0 0 2px white;
+    cursor: pointer;
 }
 
 .ps4_contained a {
@@ -342,6 +449,14 @@ h1 {
     background-color: rgb(212, 212, 212);
     border: none;
     border-radius: 20px;
+}
+
+
+.ps_plus_contained button:hover, 
+.ps_plus_contained button:focus,
+.ps_plus_contained button:active {
+    cursor: pointer;
+    box-shadow: inset 0 0 0 1px RGB(8, 118, 208), inset 0 0 0 2px RGB(193, 189, 188);
 }
 
 .ps_plus_contained a {
@@ -416,6 +531,13 @@ h1 {
     border-radius: 20px;
 }
 
+.ps_now_contained button:hover, 
+.ps_now_contained button:focus,
+.ps_now_contained button:active {
+    cursor: pointer;
+    box-shadow: inset 0 0 0 1px white, inset 0 0 0 2px RGB(8, 19, 50);
+}
+
 .ps_now_contained a {
     text-decoration: none;
     color:RGB(8, 19, 50);
@@ -446,6 +568,10 @@ h1 {
 
 .social_media_contained img {
     height: 150px;
+}
+
+.social_media_contained img {
+    cursor: pointer;
 }
 
 /* footer rules */
