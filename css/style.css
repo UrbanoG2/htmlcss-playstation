@@ -9,7 +9,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
-    overflow-x: hidden;
 }
 
 .h1, 
@@ -119,7 +118,7 @@ header {
 
 
 .jumbo_contained img {
-    height: 65px;
+    height: 35px;
     margin-top: 200px;
 }
 
@@ -163,7 +162,7 @@ h1 {
 /* card section */
 
 .card_section img {
-    height: 130px;
+    width: 100%;
     border-radius: 10px;
     -webkit-animation-duration: 0s;
     animation-duration: 0s;
@@ -206,11 +205,11 @@ h1 {
 
 
 
-@media screen and (min-width:992px) {
+/* @media screen and (min-width:992px) {
     .card_section img {
         height: 110px;
     }
-}
+} */
 
 
 /* /card section */
@@ -258,27 +257,27 @@ h1 {
 }
 
 .section_ps5 img {
-    height: 430px;
+    width: 100%;
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
     .section_ps5 img {
         height: 400px;
     }
     
-}
+} */
 
-@media screen and (min-width: 992px) {
+/* @media screen and (min-width: 992px) {
     .section_ps5 img {
         height: 500px;
     }
     
-}
+} */
 
 /* accessories section */
 
 .accessories_section img {
-    height: 140px;
+    width: 100%;
     filter: opacity(80%);
 }
 
@@ -292,12 +291,12 @@ h1 {
 
 
 
-@media screen and (min-width:992px) {
+/* @media screen and (min-width:992px) {
     .accessories_section img {
         height: 180px;
         margin-left: 1em;
     }
-}
+} */
 
 
 /* adv section rules */
@@ -358,7 +357,7 @@ h1 {
 }
 
 .coming_soon_contained img {
-    height: 240px;
+    width: 100%;
     border-radius: 10px;
     margin-bottom: 1em;
 }
@@ -373,13 +372,13 @@ h1 {
     font-size: 20px;
 }
 
-@media screen and (min-width:1200px) {
+/* @media screen and (min-width:1200px) {
 
     .coming_soon_contained img {
         height: 200px;
     }
 
-}    
+}     */
 
 
 /* ps4 section rules */
@@ -420,14 +419,14 @@ h1 {
 }
 
 .ps4_contained img {
-    height: 300px;
+    width: 100%;
 }
 
-@media screen and (min-width:768px) {
+/* @media screen and (min-width:768px) {
     .ps4_contained img {
        height: 145px;
     }
-}
+} */
 
 
 /* ps plus rules */
@@ -437,7 +436,7 @@ h1 {
 }
 
 .ps_plus_contained img {
-    height: 80px;
+    width: 100%;
 }
 
 .ps_plus_contained p {
@@ -493,22 +492,22 @@ h1 {
 }
 
 .ps_store_contained img {
-    height: 500px;
+    width: 100%;
 }
 
   
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
     .ps_store_contained img {
         height: 220px;
     }
-}   
+}    */
 
-@media screen and (min-width: 992px) {
+/* @media screen and (min-width: 992px) {
     .ps_store_contained img {
         height: 295px;
     }
-} 
+}  */
 
 /* ps now rules */
 
