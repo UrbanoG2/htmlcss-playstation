@@ -516,7 +516,7 @@ h1 {
 }
 
 .ps_now_contained img {
-    height: 80px;
+    width: 100%;
 }
 
 .ps_now_contained p {
